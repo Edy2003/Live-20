@@ -45,6 +45,7 @@ button:disabled{
         flex-direction: column-reverse;
         padding:15px 10px;
         align-items: center;
+        margin: 0;
 }
    .result{
        margin-top: 15px;
