@@ -1,0 +1,36 @@
+ul{
+    font-size: 20px;
+    list-style-type: decimal;
+}
+button:disabled{
+    color:black;
+    background-color: inherit;
+    border: none;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.result{
+    font-size: 40px;
+}
+.currentNumb{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    font-size: 106px;
+}
+.currentNumbBtn{
+    font-size: 14px;
+    margin-top:15px;
+}
+.currentNumbBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
