@@ -16,10 +16,15 @@ button:disabled{
 .result{
     font-size: 40px;
 }
+.numbContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .currentNumb{
     display: flex;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 250px;
     border: 1px solid black;
     align-items: center;
     justify-content: center;
@@ -33,4 +38,32 @@ button:disabled{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+    .container{
+        flex-direction: column-reverse;
+        padding:15px 10px;
+        align-items: center;
+}
+   .result{
+       margin-top: 15px;
+       font-size: 20px;
+   }
+   .list{
+       margin-top: 15px;
+       overflow: hidden;
+       height: 400px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   ul{
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+   }
+   ul li{
+       margin: 0 30px;
+   }
 }

@@ -33,6 +33,9 @@ function Main (){
                 case '15':
                     setArr([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
                     break;
+                case '20':
+                    setArr([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0]);
+                    break;
             }
         }else{
             setMessage('Wait until game ends')
@@ -41,7 +44,7 @@ function Main (){
     }
 
     function generateNumb(){
-        passedStatus?setNumber(Math.floor(Math.random()*700)):setMessage('Choose button!!!');
+        passedStatus?setNumber(Math.floor(Math.random()*1000)):setMessage('Choose button!!!');
         setPassedStatus(false);
     }
 
@@ -75,12 +78,13 @@ function Main (){
     },[arr])
     return(
         <div className='container'>
-            <div>
+            <div className='list'>
                 {endedGame?<div>
                         <select onChange={(e)=>setLevel(e.target.value)}>
                             <option value={'5'}>5</option>
                             <option value={'10'}>10</option>
                             <option value={'15'}>15</option>
+                            <option value={'20'}>20</option>
                         </select>
                         <button onClick={generateArr}>Generate array</button>
                     </div>
