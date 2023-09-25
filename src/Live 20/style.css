@@ -11,7 +11,7 @@ button:disabled{
 .container{
     display: flex;
     justify-content: space-between;
-    padding: 30px 100px;
+    padding: 100px 250px;
 }
 .result{
     font-size: 40px;
